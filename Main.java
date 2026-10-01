@@ -1,3 +1,6 @@
+import java.util.Scanner;
+//Import statements always go at the begninning of the code
+
 public class Main {
 /* 
 This is my comment space! 
@@ -31,6 +34,29 @@ This is my comment space!
 
       // % gives us the remainder
       System.out.println(x%y);
+
+      x = 6;
+      y = x;
+      x = 8;
+
+      // We can also update variable assignments by incrementing and decrementing
+      // Incrementing adds 1 to our value 
+      // Decrementing subtracts 1 from out value 
+
+      x = x + 1;
+      // x++ updates our variable even without the equal sign
+      x++;
+      x = x - 1;
+      // x-- updates our varibale even without the equal sign 
+      x--;
+
+
+
+      System.out.println("Please type in a name in the input box below.");
+      Scanner scan = new Scanner(System.in);
+      String name = scan.nextLine();
+      System.out.println("Hello " + name);
+      scan.close();
    }
 
 }
